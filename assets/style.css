@@ -9,4 +9,14 @@
 
 .links {
     text-decoration: none;
+    color: black;
+}
+
+.links:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.pfp {
+    width: 100%;
+    border-radius: 50%;
 }
