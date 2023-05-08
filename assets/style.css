@@ -18,5 +18,16 @@
 
 .pfp {
     width: 100%;
+    border-style: solid;
+    border-width: 5px;
     border-radius: 50%;
+    border-color: #E48383;
+}
+
+.heading-text {
+    color: #E48383;
+}
+
+.pink-bg {
+    background: #F5E0D4 !important;
 }
