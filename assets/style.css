@@ -1,5 +1,6 @@
 .logo {
-    width: 50px;
+    width: 150px;
+    padding-left: 20px;
 }
 
 .icons {
@@ -130,10 +131,14 @@
     color: #F5E0D4;
 }
 
-.html {width: 80%; background-color: #E48383; padding-right: 5px;}
-.css {width: 75%; background-color: #E48383; padding-right: 5px;}
-.bootstrap {width: 60%; background-color: #E48383; padding-right: 5px;}
+.html {width: 90%; background-color: #E48383; padding-right: 5px;}
+.css {width: 84%; background-color: #E48383; padding-right: 5px;}
+.bootstrap {width: 80%; background-color: #E48383; padding-right: 5px;}
 
 .skills-fix {
     padding: 10px;
+}
+
+.bottom-fix {
+    padding-bottom: 156px !important;
 }
