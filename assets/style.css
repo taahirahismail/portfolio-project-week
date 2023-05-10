@@ -8,6 +8,11 @@
     padding: 5px;
 }
 
+.site-pics {
+    width: 331px;
+    padding: 20px;
+}
+
 .links {
     text-decoration: none;
     color: black;
@@ -122,6 +127,7 @@
 .skills-container {
     width: 100%;
     background-color: ivory;
+    border-radius: 10px;
 }
 
 .skills {
@@ -131,9 +137,29 @@
     color: #F5E0D4;
 }
 
-.html {width: 90%; background-color: #E48383; padding-right: 5px;}
-.css {width: 84%; background-color: #E48383; padding-right: 5px;}
-.bootstrap {width: 80%; background-color: #E48383; padding-right: 5px;}
+.html {max-width: 90%; background-color: #E48383; padding-right: 5px; border-radius: 10px;}
+.css {max-width: 84%; background-color: #E48383; padding-right: 5px; border-radius: 10px;}
+.bootstrap {max-width: 80%; background-color: #E48383; padding-right: 5px; border-radius: 10px;}
+.leadership {max-width: 65%; background-color: #E48383; padding-right: 5px; border-radius: 10px;}
+.crit-thinking {max-width: 78%; background-color: #E48383; padding-right: 5px; border-radius: 10px;}
+.people {max-width: 82%; background-color: #E48383; padding-right: 5px; border-radius: 10px;}
+.data-analysis {max-width: 76%; background-color: #E48383; padding-right: 5px; border-radius: 10px;}
+.organization {max-width: 93%; background-color: #E48383; padding-right: 5px; border-radius: 10px;}
+.cool-stylish {max-width: 100%; background-color: #E48383; padding-right: 5px; border-radius: 10px;}
+
+.html, .css, .bootstrap, .leadership, .crit-thinking, .people, .data-analysis, .organization, .cool-stylish {
+    animation-name: fill-bars;
+    animation-duration: 2.5s;
+}
+
+@keyframes fill-bars {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
 
 .skills-fix {
     padding: 10px;
