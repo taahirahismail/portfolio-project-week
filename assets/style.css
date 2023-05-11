@@ -1,3 +1,10 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
 /* pictures and icons styling */
 .logo {
     width: 150px;
@@ -63,6 +70,7 @@
 
 .light-border {
     border-color: ivory !important;
+    border-width: 2px !important;
 }
 /* text, backgrounds, and border styling ends */
 
@@ -216,7 +224,7 @@
 /* projects styling ends */
 
 /* testimonial styling */
-figure.snip1139 {
+figure.test-cards {
   position: relative;
   overflow: hidden;
   margin: 10px;
@@ -228,17 +236,17 @@ figure.snip1139 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
 }
-figure.snip1139 * {
+figure.test-cards * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
-figure.snip1139 img {
+figure.test-cards img {
   max-width: 100%;
   vertical-align: middle;
 }
-figure.snip1139 blockquote {
+figure.test-cards blockquote {
   position: relative;
   background-color: ivory;
   padding: 25px 50px 25px 50px;
@@ -249,8 +257,8 @@ figure.snip1139 blockquote {
   line-height: 1.6em;
   font-style: italic;
 }
-figure.snip1139 blockquote:before,
-figure.snip1139 blockquote:after {
+figure.test-cards blockquote:before,
+figure.test-cards blockquote:after {
   font-family: 'FontAwesome';
   content: "\201C";
   position: absolute;
@@ -258,16 +266,16 @@ figure.snip1139 blockquote:after {
   opacity: 0.3;
   font-style: normal;
 }
-figure.snip1139 blockquote:before {
+figure.test-cards blockquote:before {
   top: 25px;
   left: 20px;
 }
-figure.snip1139 blockquote:after {
+figure.test-cards blockquote:after {
   content: "\201D";
   right: 20px;
   bottom: 0;
 }
-figure.snip1139 .arrow {
+figure.test-cards .arrow {
   top: 100%;
   width: 0;
   height: 0;
@@ -277,7 +285,7 @@ figure.snip1139 .arrow {
   margin: 0;
   position: absolute;
 }
-figure.snip1139 .author {
+figure.test-cards .author {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -287,12 +295,12 @@ figure.snip1139 .author {
   margin: 0;
   text-transform: uppercase;
 }
-figure.snip1139 .author h5 {
+figure.test-cards .author h5 {
   opacity: 0.8;
   margin: 0;
   font-weight: 800px;
 }
-figure.snip1139 .author h5 span {
+figure.test-cards .author h5 span {
   font-weight: 400;
   text-transform: none;
   padding-left: 5px;
@@ -300,7 +308,7 @@ figure.snip1139 .author h5 span {
 /*testimonial styling end*/
 
 /* media queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .hide {
         display: none;
     }
@@ -310,33 +318,13 @@ figure.snip1139 .author h5 span {
     }
 }
 
-@media screen and (max-width: 1220px) {
+/* @media screen and (max-width: 1220px) {
     #testimonials .media-fix {
         width: 100%;
     }
-}
-/* media queries end */
 
-/* testing testing 1 2 3 */
-h3 {
-    margin: 0
-  }
-  .box {
-    height: 200px;
-    width: 300px;
-    overflow: hidden;
-    background-image: url("./img/lylebrown.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .hid-box {
-    top: 100%;
-    position: relative;
-    transition: all .3s ease-out;
-    height: 100%;
-  }
-  
-  .box:hover > .hid-box{
-    top: 0;
-  }
+    .media-width-bigger {
+        width: 100%;
+    }
+} */
+/* media queries end */
