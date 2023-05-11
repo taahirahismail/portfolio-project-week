@@ -1,3 +1,4 @@
+/* pictures and icons styling */
 .logo {
     width: 150px;
     padding-left: 20px;
@@ -13,6 +14,16 @@
     padding: 20px;
 }
 
+.pfp {
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 50%;
+    border-color: #E48383;
+}
+/* pictures and icons styling ends */
+
+/* text, backgrounds, and border stylings */
 .links {
     text-decoration: none;
     color: black;
@@ -20,14 +31,6 @@
 
 .links:hover {
     color: rgba(0, 0, 0, 0.6);
-}
-
-.pfp {
-    width: 100%;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 50%;
-    border-color: #E48383;
 }
 
 .heading-text {
@@ -61,7 +64,40 @@
 .light-border {
     border-color: ivory !important;
 }
+/* text, backgrounds, and border styling ends */
 
+/* home page styling */
+.typewriter h2 {
+    display: flex;
+    align-content: center;
+    color: #DC3545;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #d76969; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100%;}
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    0% { border-color: transparent }
+    50% { border-color: #d76969 }
+    100% { border-color: transparent}
+  }
+/* home page styling ends */
+
+/* about page styling */
+/* timeline */
 .timeline {
     position: relative;
     max-width: 100%;
@@ -92,7 +128,7 @@
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: ivory;
+    background-color: #E48383;
     border: 4px solid #E48383;
     top: 15px;
     border-radius: 50%;
@@ -123,7 +159,9 @@
     border-radius: 6px;
     border: 1px solid #E48383;
 }
+/* timeline ends */
 
+/* skills bars */
 .skills-container {
     width: 100%;
     background-color: ivory;
@@ -164,82 +202,141 @@
 .skills-fix {
     padding: 10px;
 }
+/* skills bars end */
 
 .bottom-fix {
     padding-bottom: 156px !important;
 }
+/* about styling ends */
 
+/* projects styling */
 .bottom-fix-2 {
     padding-bottom: 52px;
 }
+/* projects styling ends */
 
-.test-container {
-    display : flex;
-    align-items : space-around;
-    justify-content : center;  
-    background-color: ivory;
-    min-height : 800px;
-    position : relative;
-    width : 100%;
-    display : flex;
-    align-items : center;
-    justify-content : center;
-    flex-wrap : wrap;
-    padding : 30px;  
+/* testimonial styling */
+figure.snip1139 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 500px;
+  width: 100%;
+  color: black;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+figure.snip1139 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1139 img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+figure.snip1139 blockquote {
+  position: relative;
+  background-color: ivory;
+  padding: 25px 50px 25px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+figure.snip1139 blockquote:before,
+figure.snip1139 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1139 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+figure.snip1139 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+figure.snip1139 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #ffffff;
+  margin: 0;
+  position: absolute;
+}
+figure.snip1139 .author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 25px;
+  color: #000000;
+  background-color: ivory;
+  margin: 0;
+  text-transform: uppercase;
+}
+figure.snip1139 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800px;
+}
+figure.snip1139 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}
+/*testimonial styling end*/
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .hide {
+        display: none;
+    }
+
+    .add-pad {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    #testimonials .media-fix {
+        width: 100%;
+    }
+}
+/* media queries end */
+
+/* testing testing 1 2 3 */
+h3 {
+    margin: 0
   }
-  
-  .test-container .test-card {
+  .box {
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    background-image: url("./img/lylebrown.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hid-box {
+    top: 100%;
     position: relative;
-    max-width : 280px;
-    height : 215px;  
-    background-color : ivory;
-    margin : 30px 10px;
-    padding : 20px 15px;
-    
-    display : flex;
-    flex-direction : column;
-    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
-    transition : 0.3s ease-in-out;
-    border-radius : 15px;
-  }
-  .test-container .test-card:hover {
-    height : 320px;    
+    transition: all .3s ease-out;
+    height: 100%;
   }
   
-  
-  .test-container .test-card .test-image {
-    position : relative;
-    width : 260px;
-    height : 260px;
-    
-    top : -40%;
-    left: 8px;
-    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
-    z-index : 1;
-  }
-  
-  .test-container .test-card .test-image img {
-    max-width : 100%;
-    border-radius : 15px;
-  }
-  
-  .test-container .test-card .test-content {
-    position : relative;
-    top : -140px;
-    padding : 10px 15px;
-    color : black;
-    text-align : center;
-    
-    visibility : hidden;
-    opacity : 0;
-    transition : 0.3s ease-in-out;
-      
-  }
-  
-  .test-container .test-card:hover .test-content {
-     margin-top : 30px;
-     visibility : visible;
-     opacity : 1;
-     transition-delay: 0.2s;
-    
+  .box:hover > .hid-box{
+    top: 0;
   }
