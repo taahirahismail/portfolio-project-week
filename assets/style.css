@@ -1,4 +1,4 @@
-/* font link */
+/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body {
@@ -78,6 +78,7 @@ body {
 .typewriter h2 {
     display: flex;
     align-content: center;
+    text-align: center;
     color: #DC3545;
     font-family: monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -259,7 +260,6 @@ figure.test-cards blockquote {
 }
 figure.test-cards blockquote:before,
 figure.test-cards blockquote:after {
-  font-family: 'FontAwesome';
   content: "\201C";
   position: absolute;
   font-size: 50px;
@@ -305,6 +305,17 @@ figure.test-cards .author h5 span {
   text-transform: none;
   padding-left: 5px;
 }
+
+.home-screen{
+    width: 100%;
+}
+.home{
+    max-width: 100%;
+}
+
+.heading{
+    width: 100%;
+}
 /*testimonial styling end*/
 
 /* media queries */
@@ -318,13 +329,19 @@ figure.test-cards .author h5 span {
     }
 }
 
-/* @media screen and (max-width: 1220px) {
-    #testimonials .media-fix {
-        width: 100%;
+@media screen and (max-width: 1400px) {
+    .typewriter h2 {
+        display: flex;
+        flex-wrap: wrap;
+        white-space: normal;        
     }
+  }
 
-    .media-width-bigger {
-        width: 100%;
+  @media screen and (max-width: 500px) {
+    #main .p-5 {
+        padding: 4px !important;
+        margin: 0 !important;
+        margin-top: 12px !important;
     }
-} */
+  }
 /* media queries end */
